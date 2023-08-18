@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./game-center-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Game center</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-comp nav-head">
+
+            <img src="game-center-2.png" alt="logo" id="logoimg" width="120px">
+            
+        </div>
+
+        <div class="nav-comp nav-tab">
+
+            <a href="/" class="nav-link homeScreen">Home</a>
+            <a href="#" class="nav-link gameScreen">Games</a>
+            <a href="/about.html" class="nav-link gameScreen">About</a>
+
+        </div>
+
+    </nav>
+
+    <div class="body-container">
+        <div class="welcome-screen screens">
+
+            <h1 class="welcome-head" style="color: yellow;">Welcome to the Game Center</h1>
+
+            <p class="welcome-para">
+                Step into a world of endless excitement and immerse yourself in the realm of games! Our website is a haven for all gaming enthusiasts, where you'll find a treasure trove of thrilling adventures and captivating challenges. From heart-pounding action to mind-bending puzzles, our carefully curated collection of games caters to every taste. Whether you're a seasoned gamer seeking new challenges or a novice exploring the gaming universe, we've got something for you. Join our vibrant community, embark on epic quests, and compete with players worldwide. So, gear up, grab your controllers, and let the games begin! Get ready to level up your gaming experience!
+            </p>
+
+            
+            <a href="#" class="explore-btn gameScreen">Explore games</a>
+
+
+        </div>
+
+        <div class="game-screen screens">
+            <a href="github.com/kpunit333/guess_number_game" class="game-card-a" target="_blank">
+                <div class="game-card">
+                    <div class="game-card-img-box">
+
+                        <img src="./guess-logo-1.jpg" alt="roll the dice" class="game-card-img" width="100%">
+
+                    </div>
+                    <h3 class="game-card-name">Guess the number</h3>
+                </div>
+            </a>
+
+            <a href="github.com/kpunit333/roll_dice" class="game-card-a"  target="_blank">
+                <div class="game-card">
+                    <div class="game-card-img-box">
+
+                        <img src="./roll-dice-2.jpg" alt="roll the dice" class="game-card-img" width="100%">
+
+                    </div>
+                    <h3 class="game-card-name">Roll the dice</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+
+    $('.game-screen').hide();
+    $('.welcome-screen').show();
+
+
+    $('.gameScreen').click(()=>{
+
+        $('.game-screen').show();
+        $('.welcome-screen').hide();
+    })
+
+    $('.homeScreen').click(()=>{
+
+        $('.game-screen').hide();
+        $('.welcome-screen').show();
+    })
+
+
+</script>
+</html>
